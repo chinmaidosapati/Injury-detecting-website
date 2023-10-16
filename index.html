@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Injury Reporting Form</h1>
+    <form id="injuryForm">
+        <div class="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required placeholder="Enter your name">
+        <br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required placeholder="Enter the date">
+        <br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" required placeholder="Enter the time">
+        <br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" required placeholder="Enter the location where the injury has happened">
+        <br>
+
+        <br>
+        <div class="img">
+        <img src="https://www.templateswift.com/wp-content/uploads/2023/03/human-body-outline-template-fsssftr-7575708.png" alt="humanbody">
+        </br>
+        </div>
+         <br>
+        <button id="drawCircle">Draw Circle</button>
+        <button id="clearCanvas">Clear Canvas</button>
+        </br>
+
+        <label for="description">Description of the injury:</label>
+        <textarea id="description" rows="4" required></textarea><br>
+
+        <div class="container">
+            <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+            <div class="popup" id="popup">
+                <h2>Thank You!</h2>
+                <p>Your details has been successfully submitted. Thanks!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+    
+</body>
+</html>

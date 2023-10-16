@@ -1,0 +1,119 @@
+body{
+    background: hsla(208, 67%, 81%, 1);
+
+background: linear-gradient(90deg, hsla(208, 67%, 81%, 1) 0%, hsla(37, 65%, 85%, 1) 50%, hsla(301, 65%, 83%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(208, 67%, 81%, 1) 0%, hsla(37, 65%, 85%, 1) 50%, hsla(301, 65%, 83%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(208, 67%, 81%, 1) 0%, hsla(37, 65%, 85%, 1) 50%, hsla(301, 65%, 83%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#AED1EF", endColorstr="#F2DFC1", GradientType=1 );
+}
+
+h1{
+    font-size: 50px;
+    color: rgba(0, 48, 73);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    align-items: center;
+    
+}
+.form label{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    color: rgba(0, 129, 167);
+}
+.form input{
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+button{
+    background-color: #ffde92;
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s ease-in;
+}
+    
+.img img{
+    height: 350px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+.form textarea{
+    width: 95%;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 3px;
+}
+.container{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
